@@ -1,0 +1,24 @@
+{
+  "bindings": [
+    {
+      "type": "table",
+      "name": "existingMetricsTable",
+      "tableName": "TrelloNumberOfCards",
+      "connection": "function7e160bd08078_STORAGE",
+      "direction": "in"
+    },
+    {
+      "type": "table",
+      "name": "metricsTable",
+      "tableName": "TrelloNumberOfCards",
+      "connection": "function7e160bd08078_STORAGE",
+      "direction": "out"
+    },
+    {
+      "type": "manualTrigger",
+      "name": "input",
+      "direction": "in"
+    }
+  ],
+  "disabled": false
+}

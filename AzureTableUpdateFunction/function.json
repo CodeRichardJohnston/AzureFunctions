@@ -1,0 +1,25 @@
+{
+  "bindings": [
+    {
+      "type": "table",
+      "name": "existingMetricsTable",
+      "tableName": "Metrics",
+      "connection": "function7e160bd08078_STORAGE",
+      "direction": "in"
+    },
+    {
+      "type": "table",
+      "name": "metricsTable",
+      "tableName": "Metrics",
+      "connection": "function7e160bd08078_STORAGE",
+      "direction": "out"
+    },
+    {
+      "type": "timerTrigger",
+      "name": "myTimer",
+      "schedule": "0 0 6 * * *",
+      "direction": "in"
+    }
+  ],
+  "disabled": false
+}
