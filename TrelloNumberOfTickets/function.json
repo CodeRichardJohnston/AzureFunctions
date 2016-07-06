@@ -14,9 +14,10 @@
       "connection": "function7e160bd08078_STORAGE",
       "direction": "out"
     },
-    {
-      "type": "manualTrigger",
-      "name": "input",
+		{
+      "type": "timerTrigger",
+      "name": "myTimer",
+      "schedule": "0 0 23 * * 1-5",
       "direction": "in"
     }
   ],

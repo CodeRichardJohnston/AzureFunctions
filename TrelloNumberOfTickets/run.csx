@@ -10,7 +10,7 @@ using System.Net;
 using Microsoft.WindowsAzure.Storage;
 using Microsoft.WindowsAzure.Storage.Table;
 
-public static void Run(string input, CloudTable existingMetricsTable, ICollector<MetricsRow> metricsTable, TraceWriter log)
+public static void Run(TimerInfo myTimer, CloudTable existingMetricsTable, ICollector<MetricsRow> metricsTable, TraceWriter log)
 {
     TrelloSettings settings = new TrelloSettings("d642c79f38bb2eef7e51454bcd25d62a8711becb8a38aa18f81504ba4a4a6884", "7809f5ecffcd98271e7e0d0f97256ffc", "");
 	List<Card> backlogCards = new TrelloCards(settings).GetAllCardsForAList("54f88861ec56b782d05202f7");
