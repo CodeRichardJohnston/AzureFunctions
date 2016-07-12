@@ -17,7 +17,7 @@
 		{
       "type": "timerTrigger",
       "name": "myTimer",
-      "schedule": "0 0 10 * * 1-5",
+      "schedule": "0 0 15 * * *",
       "direction": "in"
     }
   ],
