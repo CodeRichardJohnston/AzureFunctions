@@ -40,7 +40,7 @@ public static void Run(TimerInfo myTimer, CloudTable existingMetricsTable, IColl
         metricsRow.ClientQA = ClientQaCards.Count;
         metricsRow.ReadyForRelease = ReadyForReleaseCards.Count;
         metricsRow.Released = ReleasedCards.Count;
-				metricsRow.Date = DateTime.Parse(metricsRow.Date).ToString("dd'/'MM'/'yyyy");
+				//metricsRow.Date = DateTime.Parse(metricsRow.Date).ToString("dd'/'MM'/'yyyy");
 
 	    operation = TableOperation.Replace(metricsRow);
 	    existingMetricsTable.Execute(operation);
