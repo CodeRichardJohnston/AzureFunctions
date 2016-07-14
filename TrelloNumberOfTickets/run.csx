@@ -51,7 +51,7 @@ public static void Run(TimerInfo myTimer, CloudTable existingMetricsTable, IColl
                 new MetricsRow() {
                     PartitionKey = "Metrics",
                     RowKey = dateTimeKey,
-                    Date = DateTime.Now.ToDateTime("dd'/'MM'/'yyyy"),
+                    Date = DateTime.Now.ToString("dd'/'MM'/'yyyy"),
                     Backlog = backlogCards.Count,
                     ToDo = toDoCards.Count,
                     Inprogress = inProgressCards.Count,
