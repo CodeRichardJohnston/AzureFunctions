@@ -1,0 +1,26 @@
+{
+"bindings": [
+  {
+    "queueName": "newfileuploaded",
+    "connection": "function7e160bd08078_STORAGE",
+    "name": "filename",
+    "type": "queueTrigger",
+    "direction": "in"
+  },
+  {
+    "path": "input-images/{queueTrigger}",
+    "connection": "function7e160bd08078_STORAGE",
+    "name": "blobStream",
+    "type": "blob",
+    "direction": "in"
+  },
+  {
+    "name": "container",
+    "type": "blob",
+    "path": "output-images",
+    "connection": "function7e160bd08078_STORAGE",
+    "direction": "in"
+  }
+],
+"disabled": false
+}
